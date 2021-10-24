@@ -6,16 +6,21 @@ import java.util.*;
 
 
 public class Lessons {
+    private List<String> li;
 
+    public Lessons(){
+        li = new ArrayList<String>();
+    }
 
     public static class undergraduate{         
         
-        List<String> ee = Arrays.asList(new String[]{"Math", "Physics", "Introduction to Electronics"});
-        List<String> ce = Arrays.asList(new String[]{"Algebra", "Physics-cp-ug", "computer sciences"});
+        private String s[] = {"Math", "Physics", "Introduction to Electronics"};
+        private String s2[] = {"Algebra", "Physics-cp-ug", "computer sciences"};
+        private List<String> ee = Arrays.asList(s);
+        private List<String> ce = Arrays.asList(s2);
 
         public undergraduate(){            
-            ee = Arrays.asList(new String[]{"Math", "Physics", "Introduction to Electronics"});
-            ce = Arrays.asList(new String[]{"Algebra", "Physics-cp-ug", "computer sciences"});
+            
             
         }        
         
@@ -35,7 +40,7 @@ public class Lessons {
             this.ce = ce;
         }
 
-        public void add(String major, String item){
+        public void add(String item){
             this.ee.add(item);
             // try {
             //     if(major.equals("ee")){
@@ -107,6 +112,16 @@ public class Lessons {
 
 
     }
+
+
+    public void add(String item){
+        this.li.add(item);
+    }
+
+    public List<String> getList(){
+        return li;
+    }
+
 }
 
 

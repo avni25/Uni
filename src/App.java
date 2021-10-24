@@ -24,10 +24,14 @@ public class App {
         Lessons.undergraduate ul = new Lessons.undergraduate();
         Lessons.undergraduate gl = new Lessons.undergraduate();
         Lessons.undergraduate pl = new Lessons.undergraduate();
+        Lessons l = new Lessons();
 
-        ul.add("ee", "magnetics");
+
+        // ul.add("magnetics");
         print(ul.get_ee_lessons());
 
+        l.add("qweqweasd");
+        print(l.getList());
 
     }
 
