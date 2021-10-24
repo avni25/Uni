@@ -27,11 +27,14 @@ public class App {
         Lessons l = new Lessons();
 
 
-        // ul.add("magnetics");
+        ul.add("magnetics");
         print(ul.get_ee_lessons());
-
+        
         l.add("qweqweasd");
         print(l.getList());
+
+
+
 
     }
 

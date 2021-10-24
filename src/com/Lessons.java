@@ -14,14 +14,16 @@ public class Lessons {
 
     public static class undergraduate{         
         
-        private String s[] = {"Math", "Physics", "Introduction to Electronics"};
-        private String s2[] = {"Algebra", "Physics-cp-ug", "computer sciences"};
-        private List<String> ee = Arrays.asList(s);
-        private List<String> ce = Arrays.asList(s2);
+        // private String s[] = {"Math", "Physics", "Introduction to Electronics"};
+        // private String s2[] = {"Algebra", "Physics-cp-ug", "computer sciences"};
+        private  List<String> ee;
+        private  List<String> ce;
 
-        public undergraduate(){            
-            
-            
+        public undergraduate(){   
+            ee = new ArrayList<>();
+            ce = new ArrayList<>();         
+            // ee = Arrays.asList(s);
+            // ce = Arrays.asList(s2);
         }        
         
         public List<String> get_ee_lessons(){
@@ -41,7 +43,7 @@ public class Lessons {
         }
 
         public void add(String item){
-            this.ee.add(item);
+            ee.add(item);
             // try {
             //     if(major.equals("ee")){
             //         this.ee.add(item);  
